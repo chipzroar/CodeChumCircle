@@ -29,9 +29,9 @@ public class CircleGUI extends JFrame{
     public void computed() {
         String r = tfRadius.getText();
         double a = (double) (Math.pow(Integer.parseInt(r), 2) * Math.PI);
-        tfArea.setText(String.valueOf(a));
+        tfArea.setText(String.format("%.2f", a));
         double c = (double) (Integer.parseInt(r) * Math.PI) * 2;
-        tfCircumference.setText(String.valueOf(c));
+        tfCircumference.setText(String.format("%.2f", c));
     }
 
     public void clear() {
